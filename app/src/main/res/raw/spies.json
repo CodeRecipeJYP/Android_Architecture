@@ -1,0 +1,99 @@
+[
+   {
+      "id": 1,
+      "name": "Madisyn Burns",
+      "age": 78,
+      "gender": "female",
+      "password": "SpINiTaNtOUs",
+      "isIncognito": false
+   },
+   {
+      "id": 2,
+      "name": "Maryjane Rhodes",
+      "age": 25,
+      "gender": "female",
+      "password": "962i5X8n7%5q",
+      "isIncognito": true
+   },
+   {
+      "id": 3,
+      "name": "Madilyn Joyce",
+      "age": 63,
+      "gender": "female",
+      "password": "RtHerseNdGaV",
+      "isIncognito": false
+   },
+   {
+      "id": 4,
+      "name": "Bethany King",
+      "age": 34,
+      "gender": "female",
+      "password": "0!#oBX3u1370",
+      "isIncognito": true
+   },
+   {
+      "id": 5,
+      "name": "Danika Zamora",
+      "age": 55,
+      "gender": "female",
+      "password": "tIconACETyPt",
+      "isIncognito": false
+   },
+   {
+      "id": 6,
+      "name": "June Page",
+      "age": 27,
+      "gender": "female",
+      "password": "@2SQ6*X3931w",
+      "isIncognito": true
+   },
+   {
+      "id": 7,
+      "name": "Heaven Stafford",
+      "age": 44,
+      "gender": "female",
+      "password": "tIconACETyPt",
+      "isIncognito": false
+   },
+   {
+      "id": 8,
+      "name": "Logan Barr",
+      "age": 51,
+      "gender": "male",
+      "password": "d2604PHwj6e@",
+      "isIncognito": true
+   },
+   {
+      "id": 9,
+      "name": "Zion White",
+      "age": 30,
+      "gender": "male",
+      "password": "antrIbIBuLAN",
+      "isIncognito": false
+   },
+   {
+      "id": 10,
+      "name": "Rylan Adams",
+      "age": 23,
+      "gender": "male",
+      "password": "7803Q4Wc%fT1",
+      "isIncognito": true
+   },
+   {
+      "id": 11,
+      "name": "Reid Willis",
+      "age": 46,
+      "gender": "male",
+      "password": "cAEliComOnag",
+      "isIncognito": false
+   },
+   {
+      "id": 12,
+      "name": "Javion Ayers",
+      "age": 5,
+      "gender": "male",
+      "password": "sg9Z382H^Z4J",
+      "isIncognito": true
+   }
+]
+

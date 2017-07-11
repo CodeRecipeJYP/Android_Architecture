@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KnownSpies</string>
+    <string name="title_activity_spy_details">SpyDetailsActivity</string>
+    <string name="titls_activity_secret_details">Secret Details</string>
+</resources>

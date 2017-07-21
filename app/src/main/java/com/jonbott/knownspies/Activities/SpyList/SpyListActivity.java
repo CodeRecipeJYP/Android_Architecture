@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.jonbott.knownspies.Activities.Details.SpyDetailsActivity;
@@ -28,6 +29,7 @@ public class SpyListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Log.d(TAG, "onCreate: ");
         setContentView(R.layout.activity_spy_list);
 
         attachUI();
@@ -35,6 +37,7 @@ public class SpyListActivity extends AppCompatActivity {
     }
 
     private void loadData() {
+        Log.d(TAG, "loadData: ");
         spyListPresenter.loadData(spies -> {
             this.spies = spies;
 
@@ -46,6 +49,7 @@ public class SpyListActivity extends AppCompatActivity {
 
     //region Helper Methods
     private void attachUI() {
+        Log.d(TAG, "attachUI: ");
         LinearLayoutManager manager = new LinearLayoutManager(this);
 
         recyclerView = (RecyclerView) findViewById(R.id.spy_recycler_view);
@@ -57,18 +61,16 @@ public class SpyListActivity extends AppCompatActivity {
 
     //endregion
 
-    //region Data Process specific to SpyListActivity
-
-    //endregion
-
     //region User Interaction
 
     private void rowTapped(int position) {
+        Log.d(TAG, "rowTapped() called with: position = [" + position + "]");
         Spy spy = spies.get(position);
         gotoSpyDetails(spy.id);
     }
 
     private void notifyDataReceived(Source source) {
+        Log.d(TAG, "notifyDataReceived() called with: source = [" + source + "]");
         String message = String.format("Data from %s", source.name());
         Toast.makeText(SpyListActivity.this, message, Toast.LENGTH_SHORT).show();
     }
@@ -78,6 +80,7 @@ public class SpyListActivity extends AppCompatActivity {
     //region List View Adapter
 
     private void initializeListView() {
+        Log.d(TAG, "initializeListView: ");
         SpyViewAdapter adapter = new SpyViewAdapter(spies, (v, position) -> rowTapped(position));
         recyclerView.setAdapter(adapter);
     }
@@ -87,6 +90,7 @@ public class SpyListActivity extends AppCompatActivity {
     //region Navigation
 
     private void gotoSpyDetails(int spyId) {
+        Log.d(TAG, "gotoSpyDetails() called with: spyId = [" + spyId + "]");
 
         Bundle bundle = new Bundle();
         bundle.putInt(Constants.spyIdKey, spyId);

@@ -47,6 +47,7 @@ public class SpyListPresenter {
             persistJson(json, ()->loadSpiesFromLocal(onNewResults));
         });
     }
+    //endregion
 
     //region Database Methods
 
